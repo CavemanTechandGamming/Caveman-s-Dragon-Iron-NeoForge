@@ -1,4 +1,4 @@
-package com.caveman.dragon_iron;
+package com.caveman.dragoniron;
 
 import java.util.List;
 
