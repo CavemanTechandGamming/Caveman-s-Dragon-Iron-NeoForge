@@ -1,4 +1,4 @@
-package com.caveman.dragoniron;
+package com.caveman.cavemansdragoniron;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
