@@ -40,6 +40,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SWORDS)
                 .add(ModItems.DRAGON_IRON_SWORD.get());
 
-
+        // ===== Armor with armor trim =====
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.DRAGON_IRON_HELMET.get())
+                .add(ModItems.DRAGON_IRON_CHESTPLATE.get())
+                .add(ModItems.DRAGON_IRON_LEGGINGS.get())
+                .add(ModItems.DRAGON_IRON_BOOTS.get());
     }
 }

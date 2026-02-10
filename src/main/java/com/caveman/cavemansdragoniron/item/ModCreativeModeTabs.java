@@ -36,6 +36,10 @@ public class ModCreativeModeTabs {
 
 
                         // ===== Armor =====
+                        output.accept(ModItems.DRAGON_IRON_HELMET);
+                        output.accept(ModItems.DRAGON_IRON_CHESTPLATE);
+                        output.accept(ModItems.DRAGON_IRON_LEGGINGS);
+                        output.accept(ModItems.DRAGON_IRON_BOOTS);
 
 
                         // ===== Items =====

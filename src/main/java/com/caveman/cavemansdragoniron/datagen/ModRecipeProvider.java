@@ -147,5 +147,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
                 .save(recipeOutput, "cavemansdragoniron:dragon_iron_sword_from_scratch");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DRAGON_IRON_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_helmet_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DRAGON_IRON_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_chestplate_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DRAGON_IRON_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_leggings_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DRAGON_IRON_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_boots_from_scratch");
+
     }
 }

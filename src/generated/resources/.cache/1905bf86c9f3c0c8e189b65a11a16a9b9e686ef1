@@ -1,7 +1,8 @@
-// 1.21.1	2026-02-10T13:48:04.9282736	Tags for minecraft:item mod id cavemansdragoniron
+// 1.21.1	2026-02-10T17:03:51.0030937	Tags for minecraft:item mod id cavemansdragoniron
 20e5eca2613cd076ce7ff12b6ac0368f83aeedfb data/minecraft/tags/item/axes.json
 be05d3d6fdc556053e7a3810eff983475bc5e1b5 data/minecraft/tags/item/beacon_payment_items.json
 b7b8f6ea3212a37b504abffb528c2fe6acd3d348 data/minecraft/tags/item/hoes.json
 4c97921a81a5a86d8c650061f7c884459a110dca data/minecraft/tags/item/pickaxes.json
 793822505cf25890ce94cd7107a7a1fe3c9a5c81 data/minecraft/tags/item/shovels.json
 5b9912419311225dcf6f336aee87c0cd7b5dcb26 data/minecraft/tags/item/swords.json
+94b8ac21e8cd0799af74496f8871200be6e9160b data/minecraft/tags/item/trimmable_armor.json

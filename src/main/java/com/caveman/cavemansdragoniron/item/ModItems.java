@@ -20,6 +20,7 @@ public class ModItems {
                     .rarity(Rarity.EPIC)
                     .fireResistant()));
 
+    // ===== Weapons & tools =====
     public static final DeferredItem<SwordItem> DRAGON_IRON_SWORD = ITEMS.register("dragon_iron_sword",
             () -> new SwordItem(ModToolTiers.DRAGON_IRON, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.DRAGON_IRON, 3, -2.4F))
@@ -55,6 +56,31 @@ public class ModItems {
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.DRAGON_IRON, 7.0F, -3.5F))
                     .rarity(Rarity.EPIC)
                     .fireResistant()));
+
+    // ===== Armor =====
+    public static final DeferredItem<ArmorItem> DRAGON_IRON_HELMET = ITEMS.register("dragon_iron_helmet",
+            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(100))
+                            .rarity(Rarity.EPIC)
+                            .fireResistant()));
+
+    public static final DeferredItem<ArmorItem> DRAGON_IRON_CHESTPLATE = ITEMS.register("dragon_iron_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(100))
+                            .rarity(Rarity.EPIC)
+                            .fireResistant()));
+
+    public static final DeferredItem<ArmorItem> DRAGON_IRON_LEGGINGS = ITEMS.register("dragon_iron_leggings",
+            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(100))
+                            .rarity(Rarity.EPIC)
+                            .fireResistant()));
+
+    public static final DeferredItem<ArmorItem> DRAGON_IRON_BOOTS = ITEMS.register("dragon_iron_boots",
+            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(100))
+                            .rarity(Rarity.EPIC)
+                            .fireResistant()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

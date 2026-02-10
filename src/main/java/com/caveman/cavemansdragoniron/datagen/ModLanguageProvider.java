@@ -16,10 +16,10 @@ public class ModLanguageProvider extends LanguageProvider {
         // ITEMS
         // =====================
 
-        add("item.cavemansdragoniron.dragon_iron_armor_boots", "Dragon Iron Boots");
-        add("item.cavemansdragoniron.dragon_iron_armor_chestplate", "Dragon Iron Chestplate");
-        add("item.cavemansdragoniron.dragon_iron_armor_helmet", "Dragon Iron Helmet");
-        add("item.cavemansdragoniron.dragon_iron_armor_leggings", "Dragon Iron Leggings");
+        add("item.cavemansdragoniron.dragon_iron_boots", "Dragon Iron Boots");
+        add("item.cavemansdragoniron.dragon_iron_chestplate", "Dragon Iron Chestplate");
+        add("item.cavemansdragoniron.dragon_iron_helmet", "Dragon Iron Helmet");
+        add("item.cavemansdragoniron.dragon_iron_leggings", "Dragon Iron Leggings");
         add("item.cavemansdragoniron.dragon_iron_axe", "Dragon Iron Axe");
         add("item.cavemansdragoniron.dragon_iron_hammer", "Dragon Iron Hammer");
         add("item.cavemansdragoniron.dragon_iron_hoe", "Dragon Iron Hoe");
