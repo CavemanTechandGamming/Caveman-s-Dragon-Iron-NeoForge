@@ -2,6 +2,7 @@ package com.caveman.cavemansdragoniron.item;
 
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.item.custom.HammerItem;
+import com.caveman.cavemansdragoniron.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -59,25 +60,25 @@ public class ModItems {
 
     // ===== Armor =====
     public static final DeferredItem<ArmorItem> DRAGON_IRON_HELMET = ITEMS.register("dragon_iron_helmet",
-            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(100))
                             .rarity(Rarity.EPIC)
                             .fireResistant()));
 
     public static final DeferredItem<ArmorItem> DRAGON_IRON_CHESTPLATE = ITEMS.register("dragon_iron_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+            () -> new ModArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(100))
                             .rarity(Rarity.EPIC)
                             .fireResistant()));
 
     public static final DeferredItem<ArmorItem> DRAGON_IRON_LEGGINGS = ITEMS.register("dragon_iron_leggings",
-            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+            () -> new ModArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(100))
                             .rarity(Rarity.EPIC)
                             .fireResistant()));
 
     public static final DeferredItem<ArmorItem> DRAGON_IRON_BOOTS = ITEMS.register("dragon_iron_boots",
-            () -> new ArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+            () -> new ModArmorItem(ModArmorMaterials.DRAGON_IRON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(100))
                             .rarity(Rarity.EPIC)
                             .fireResistant()));
