@@ -48,6 +48,12 @@ public class ModLanguageProvider extends LanguageProvider {
         add("block.cavemansdragoniron.fancy_dragon_iron_block", "Fancy Dragon Iron Block");
 
         // =====================
+        // ENTITY
+        // =====================
+
+        add("entity.minecraft.villager.cavemansdragoniron.dragon_smith", "Dragon Smith");
+
+        // =====================
         // CREATIVE TAB
         // =====================
 

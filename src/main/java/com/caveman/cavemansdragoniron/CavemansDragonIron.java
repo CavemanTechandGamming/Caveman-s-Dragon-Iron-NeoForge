@@ -4,6 +4,7 @@ import com.caveman.cavemansdragoniron.block.ModBlocks;
 import com.caveman.cavemansdragoniron.item.ModCreativeModeTabs;
 import com.caveman.cavemansdragoniron.item.ModItems;
 import com.caveman.cavemansdragoniron.loot.ModLootModifiers;
+import com.caveman.cavemansdragoniron.villager.ModVillagers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -44,6 +45,7 @@ public class CavemansDragonIron {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         //Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
