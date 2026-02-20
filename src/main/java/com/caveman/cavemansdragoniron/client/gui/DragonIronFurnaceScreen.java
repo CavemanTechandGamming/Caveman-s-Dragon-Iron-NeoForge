@@ -1,5 +1,6 @@
 package com.caveman.cavemansdragoniron.client.gui;
 
+import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.menu.DragonIronFurnaceMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -10,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 public class DragonIronFurnaceScreen extends AbstractContainerScreen<DragonIronFurnaceMenu> {
 
     private static final ResourceLocation TEXTURE =
-            ResourceLocation.fromNamespaceAndPath("minecraft", "textures/gui/container/furnace.png");
+            ResourceLocation.fromNamespaceAndPath(CavemansDragonIron.MOD_ID, "textures/gui/container/dragon_iron_furnace.png");
 
     public DragonIronFurnaceScreen(DragonIronFurnaceMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);

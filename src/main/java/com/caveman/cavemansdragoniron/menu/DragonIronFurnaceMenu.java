@@ -13,6 +13,15 @@ import net.minecraft.core.BlockPos;
 
 public class DragonIronFurnaceMenu extends AbstractContainerMenu {
 
+    /** Standard slot size; both input and result use this (vanilla draws all slots 16x16). */
+    public static final int SLOT_SIZE = 16;
+    /** Input slot: mirrored across the arrow from result, same Y and size. */
+    public static final int INPUT_SLOT_X = 50;   // mirrored from result (116) across arrow center (~91)
+    public static final int INPUT_SLOT_Y = 35;
+    /** Result slot position. */
+    public static final int RESULT_SLOT_X = 116;
+    public static final int RESULT_SLOT_Y = 35;
+
     private final Container container;
     private final ContainerData data;
 
@@ -23,8 +32,8 @@ public class DragonIronFurnaceMenu extends AbstractContainerMenu {
         checkContainerSize(container, 2);
         checkContainerDataCount(data, 2);
 
-        addSlot(new Slot(container, DragonIronFurnaceBlockEntity.SLOT_INPUT, 56, 17));
-        addSlot(new FurnaceResultSlot(playerInventory.player, container, DragonIronFurnaceBlockEntity.SLOT_RESULT, 116, 35));
+        addSlot(new Slot(container, DragonIronFurnaceBlockEntity.SLOT_INPUT, INPUT_SLOT_X, INPUT_SLOT_Y));
+        addSlot(new FurnaceResultSlot(playerInventory.player, container, DragonIronFurnaceBlockEntity.SLOT_RESULT, RESULT_SLOT_X, RESULT_SLOT_Y));
 
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 9; col++) {
