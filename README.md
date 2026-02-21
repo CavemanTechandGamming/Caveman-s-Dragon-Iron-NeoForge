@@ -80,5 +80,5 @@ Specify your license here (All Rights Reserved)
 
 ## 💬 Credits
 
-Created by **Caveman**  
+Created by **Caveman117**  
 Inspired by vanilla Minecraft’s progression and endgame balance.
