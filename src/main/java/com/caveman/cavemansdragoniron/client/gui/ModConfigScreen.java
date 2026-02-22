@@ -10,10 +10,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.util.FormattedCharSequence;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.regex.Pattern;
 
 /**
  * Custom config screen for the dragon iron nugget drop chance: number input with −5 / +5 buttons instead of a slider.
@@ -29,7 +29,10 @@ public class ModConfigScreen extends Screen {
     private static final int BUTTON_WIDTH = 36;
     private static final int SPACING = 4;
     private static final int DESCRIPTION_WIDTH = 260;
-    private static final Pattern CONFIG_LINE = Pattern.compile("^dragonIronNuggetEndermanDropChancePercent\\s*=\\s*\\d+");
+
+    private static final String CONFIG_HEADER =
+            "# Caveman's Dragon Iron - common config (editable)\n"
+            + "# Base chance (0-100%) for Endermen to drop a dragon iron nugget when killed without Looting. Looting adds 10% per level.\n";
 
     private final Screen parent;
     private EditBox valueField;
@@ -98,27 +101,13 @@ public class ModConfigScreen extends Screen {
     private void saveConfigToFile(int value) {
         if (minecraft == null) return;
         Path configDir = minecraft.gameDirectory.toPath().resolve("config");
-        Path configFile = configDir.resolve(CavemansDragonIron.MOD_ID + "-common.toml");
-        if (!Files.isRegularFile(configFile)) {
-            CavemansDragonIron.LOGGER.warn("Config file not found: {}", configFile);
-            return;
-        }
         try {
-            List<String> lines = Files.readAllLines(configFile);
-            boolean found = false;
-            for (int i = 0; i < lines.size(); i++) {
-                if (CONFIG_LINE.matcher(lines.get(i)).find()) {
-                    lines.set(i, "dragonIronNuggetEndermanDropChancePercent = " + value);
-                    found = true;
-                    break;
-                }
+            if (!Files.exists(configDir)) {
+                Files.createDirectories(configDir);
             }
-            if (!found) {
-                lines.add("");
-                lines.add("dragonIronNuggetEndermanDropChancePercent = " + value);
-            }
-            Files.write(configFile, lines);
-            // Config cache will pick up the new value on next load (restart or reopening config).
+            Path configFile = configDir.resolve(CavemansDragonIron.MOD_ID + "-common.toml");
+            String contents = CONFIG_HEADER + "dragonIronNuggetEndermanDropChancePercent = " + value + "\n";
+            Files.writeString(configFile, contents, StandardCharsets.UTF_8);
         } catch (IOException e) {
             CavemansDragonIron.LOGGER.warn("Could not save config: {}", e.getMessage());
         }
