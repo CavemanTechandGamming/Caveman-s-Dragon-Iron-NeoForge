@@ -30,6 +30,23 @@ public class ModLanguageProvider extends LanguageProvider {
         add("item.cavemansdragoniron.dragon_iron_sword", "Dragon Iron Sword");
 
         // =====================
+        // ITEM TOOLTIPS
+        // =====================
+
+        add("item.cavemansdragoniron.dragon_iron_boots.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_chestplate.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_helmet.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_leggings.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_axe.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_hammer.tooltip", "Forged in the fire of the Ender Dragon. Breaks blocks in a 3x3 area. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_hoe.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_ingot.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_nugget.tooltip", "Dropped by Endermen. Tempered in the Ender Dragon's fire. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_pickaxe.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_shovel.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+        add("item.cavemansdragoniron.dragon_iron_sword.tooltip", "Forged in the fire of the Ender Dragon. Fireproof.");
+
+        // =====================
         // BLOCKS
         // =====================
 
@@ -47,6 +64,25 @@ public class ModLanguageProvider extends LanguageProvider {
         add("block.cavemansdragoniron.dragon_iron_wall", "Dragon Iron Wall");
         add("block.cavemansdragoniron.fancy_dragon_iron_block", "Fancy Dragon Iron Block");
         add("block.cavemansdragoniron.dragon_iron_furnace", "Dragon Iron Furnace");
+
+        // =====================
+        // BLOCK TOOLTIPS
+        // =====================
+
+        add("block.cavemansdragoniron.dragon_glass_block.tooltip", "Glass born in the Ender Dragon's fire—crystal clear, yet extremely durable. Even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_glass_pane.tooltip", "A slim pane of dragon-forged glass. Extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_block.tooltip", "A solid block of Dragon Iron forged in the Ender Dragon's fire. The perfect foundation—extremely durable; nothing in this world can wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_button.tooltip", "A redstone button forged in the Ender Dragon's fire. Sturdy enough to take a thousand presses; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_door.tooltip", "A door forged in the Ender Dragon's fire. Bar the way and it will hold—extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_fence.tooltip", "A boundary forged in the Ender Dragon's fire. Keeps things in or out—extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_fence_gate.tooltip", "A gate forged in the Ender Dragon's fire. Hinges that never give; extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_pressure_plate.tooltip", "A pressure plate forged in the Ender Dragon's fire. Emits a redstone signal when stepped on. Extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_slab.tooltip", "Half a block of Dragon Iron forged in the Ender Dragon's fire. Ideal for floors and steps—extremely durable; nothing can wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_stairs.tooltip", "Stairs forged in the Ender Dragon's fire. A path that will never crumble—extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_trap_door.tooltip", "A trapdoor forged in the Ender Dragon's fire. Holds any weight; extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_wall.tooltip", "A wall forged in the Ender Dragon's fire. A barrier that will stand—extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.fancy_dragon_iron_block.tooltip", "An ornate block of Dragon Iron forged in the Ender Dragon's fire. A showpiece that refuses to decay—extremely durable; even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_iron_furnace.tooltip", "Forged in the fire of the Ender Dragon—and fed by that same flame. Ore and raw metal yield to its breath twice as fast as any common furnace. The heart of the dragon still burns within; extremely durable; even the harshest touch cannot wear it away.");
 
         // =====================
         // ENTITY
