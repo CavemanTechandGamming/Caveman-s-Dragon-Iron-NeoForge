@@ -1,0 +1,11 @@
+{
+  "type": "cavemansdragoniron:add_lore_book",
+  "book": "volume_4_the_dragon_and_the_flame",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_library"
+    }
+  ]
+}

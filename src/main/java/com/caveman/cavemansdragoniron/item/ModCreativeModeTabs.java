@@ -1,5 +1,6 @@
 package com.caveman.cavemansdragoniron.item;
 
+import com.caveman.cavemansdragoniron.book.ModBooks;
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
@@ -43,8 +44,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DRAGON_IRON_BOOTS);
 
 
-                        // ===== Items =====
-
+                        // ===== Lore books =====
+                        output.accept(ModBooks.getStack("volume_1_the_fragment"));
+                        output.accept(ModBooks.getStack("volume_2_the_smith_who_failed"));
+                        output.accept(ModBooks.getStack("volume_3_the_eyes_that_open"));
+                        output.accept(ModBooks.getStack("volume_4_the_dragon_and_the_flame"));
+                        output.accept(ModBooks.getStack("volume_5_the_first_dragon_smith"));
+                        output.accept(ModBooks.getStack("epilogue_the_flame_that_remains"));
 
                         // ===== Blocks =====
                         output.accept(ModBlocks.DRAGON_GLASS_BLOCK);

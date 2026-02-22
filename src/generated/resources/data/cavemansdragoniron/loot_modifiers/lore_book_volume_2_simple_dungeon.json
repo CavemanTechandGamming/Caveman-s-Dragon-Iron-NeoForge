@@ -1,0 +1,11 @@
+{
+  "type": "cavemansdragoniron:add_lore_book",
+  "book": "volume_2_the_smith_who_failed",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+  ]
+}

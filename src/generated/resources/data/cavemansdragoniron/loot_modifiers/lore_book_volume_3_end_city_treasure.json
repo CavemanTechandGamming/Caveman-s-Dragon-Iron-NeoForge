@@ -1,0 +1,11 @@
+{
+  "type": "cavemansdragoniron:add_lore_book",
+  "book": "volume_3_the_eyes_that_open",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "cavemansdragoniron:add_lore_book",
+  "book": "volume_5_the_first_dragon_smith",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+  ]
+}
