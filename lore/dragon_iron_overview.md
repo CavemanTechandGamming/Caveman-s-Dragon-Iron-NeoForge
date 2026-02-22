@@ -28,8 +28,8 @@ So the line is clear: **Ender Dragon → Endermen → nuggets → everything els
 
 ## The Dragon Smith
 
-Those who specialize in Dragon Iron are called **Dragon Smiths**. They trade in nuggets, ingots, blocks, and finished goods—from shovels and swords to full armor and the furnace itself. To them, Dragon Iron is not just a material. It is the legacy of the Ender Dragon’s fire, and they are the ones who keep that legacy alive in the Overworld.
+Those who specialize in Dragon Iron are called **Dragon Smiths**. They were **adventurers once**—they ventured into the End, found a metal that was crazy durable and strong, and named it **Dragon Iron**. They could not forge it with any ordinary furnace or anvil. Only when they found the **Dragon Iron forge in an End city** (on the outer islands, after defeating the dragon) did they learn to smelt and work it. That discovery turned them from adventurers into smiths. Today they trade in nuggets, ingots, blocks, and finished goods—from shovels and swords to full armor and the furnace itself. The Dragon Iron Furnace used in the Overworld is a recreation of that ancient End city forge, fed by the same dragon flame. (See [Dragon Smiths & Endermen](dragon_smiths_and_endermen.md) for the full story; [Vanilla End Lore](vanilla_end_lore.md) for the Minecraft foundation.)
 
 ---
 
-*Use this overview as the backbone for all other lore. Tooltips, books, and future content should stay consistent with: Ender Dragon’s fire, Endermen drops, fireproof items, durable/wither-resistant blocks, and the furnace powered by the dragon’s flame at double speed.*
+*Use this overview as the backbone for all other lore. Tooltips, books, and future content should stay consistent with: Ender Dragon’s fire, Endermen drops, Dragon Smiths as former adventurers who found the metal and the End city forge, fireproof items, durable/wither-resistant blocks, and the furnace powered by the dragon’s flame at double speed.*

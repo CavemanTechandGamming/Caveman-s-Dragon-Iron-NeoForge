@@ -22,7 +22,7 @@ Anything that is an **item** made of Dragon Iron—ingots, nuggets, tools, weapo
 
 ## The Furnace: Fed by the Same Flame
 
-The **Dragon Iron Furnace** is special. It is not only *forged* in the Ender Dragon’s fire—it is **powered** by it. The lore says the furnace is *“fed by that same flame”* and that *“the heart of the dragon still burns within.”* So when it smelts at **twice the speed** of a normal furnace, it is because the dragon’s fire is still at work inside it. That’s the in-world explanation for the 2× smelt speed: the flame of the Ender Dragon never really went out in that furnace.
+The **Dragon Iron Furnace** is special. It is not only *forged* in the Ender Dragon’s fire—it is **powered** by it. The first such forge was **found in an End city** by the adventurers who would become Dragon Smiths; they could not work Dragon Iron until they discovered it. The furnaces used in the Overworld are recreations of that ancient End city forge. The lore says the furnace is *“fed by that same flame”* and that *“the heart of the dragon still burns within.”* So when it smelts at **twice the speed** of a normal furnace, it is because the dragon’s fire is still at work inside it. That’s the in-world explanation for the 2× smelt speed: the flame of the Ender Dragon never really went out in that furnace.
 
 ---
 
