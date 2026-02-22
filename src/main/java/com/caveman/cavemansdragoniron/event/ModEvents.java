@@ -9,8 +9,12 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
@@ -21,11 +25,15 @@ import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
@@ -33,10 +41,17 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 @EventBusSubscriber(modid = CavemansDragonIron.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
 public class ModEvents {
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
+
+    /** Pending Chunk Eater magnetic pulls: items in layerBox get pulled toward player until expireTick. */
+    private static final List<ChunkEaterPull> PENDING_CHUNK_EATER_PULLS = new CopyOnWriteArrayList<>();
+
+    private record ChunkEaterPull(ResourceKey<Level> dimension, AABB layerBox, UUID playerId, int expireTick) {}
 
     // Done with the help of https://github.com/CoFH/CoFHCore/blob/1.19.x/src/main/java/cofh/core/event/AreaEffectEvents.java
     // Don't be a jerk License
@@ -67,6 +82,15 @@ public class ModEvents {
                             HARVESTED_BLOCKS.remove(pos);
                         }
                     }
+                    // Magnetic pull: schedule pulls for the next few ticks (drops may spawn after this event)
+                    if (level instanceof ServerLevel serverLevel) {
+                        int baseX = (initialBlockPos.getX() >> 4) * 16;
+                        int baseZ = (initialBlockPos.getZ() >> 4) * 16;
+                        AABB layerBox = new AABB(baseX, layerY - 0.5, baseZ, baseX + 16, layerY + 1.5, baseZ + 16);
+                        int currentTick = serverLevel.getServer().getTickCount();
+                        int expireTick = currentTick + 12; // pull for 12 ticks (~0.6 sec) so all drops are caught
+                        PENDING_CHUNK_EATER_PULLS.add(new ChunkEaterPull(serverLevel.dimension(), layerBox, serverPlayer.getUUID(), expireTick));
+                    }
                     return;
                 }
             }
@@ -81,6 +105,36 @@ public class ModEvents {
                 HARVESTED_BLOCKS.add(pos);
                 serverPlayer.gameMode.destroyBlock(pos);
                 HARVESTED_BLOCKS.remove(pos);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onLevelTick(LevelTickEvent.Post event) {
+        if (!(event.getLevel() instanceof ServerLevel serverLevel)) {
+            return;
+        }
+        int currentTick = serverLevel.getServer().getTickCount();
+        ResourceKey<Level> dimension = serverLevel.dimension();
+        PENDING_CHUNK_EATER_PULLS.removeIf(pull -> pull.dimension().equals(dimension) && currentTick > pull.expireTick());
+        for (ChunkEaterPull pull : PENDING_CHUNK_EATER_PULLS) {
+            if (!pull.dimension().equals(dimension)) {
+                continue;
+            }
+            ServerPlayer player = serverLevel.getServer().getPlayerList().getPlayer(pull.playerId());
+            if (player == null) {
+                continue;
+            }
+            Vec3 playerCenter = player.position();
+            double pullSpeed = 0.35;
+            for (ItemEntity itemEntity : serverLevel.getEntitiesOfClass(ItemEntity.class, pull.layerBox())) {
+                Vec3 toPlayer = playerCenter.subtract(itemEntity.position()).normalize();
+                itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().add(toPlayer.scale(pullSpeed)));
+                itemEntity.setPickUpDelay(0);
+            }
+            for (ExperienceOrb orb : serverLevel.getEntitiesOfClass(ExperienceOrb.class, pull.layerBox())) {
+                Vec3 toPlayer = playerCenter.subtract(orb.position()).normalize();
+                orb.setDeltaMovement(orb.getDeltaMovement().add(toPlayer.scale(pullSpeed)));
             }
         }
     }

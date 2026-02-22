@@ -103,7 +103,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_DRAGON_IRON_TOOL);
 
-
-
+        tag(ModTags.Blocks.MINEABLE_WITH_HAMMER)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }
