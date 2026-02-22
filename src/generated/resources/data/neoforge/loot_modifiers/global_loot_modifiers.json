@@ -32,7 +32,11 @@
     "cavemansdragoniron:lore_book_volume_5_village_toolsmith",
     "cavemansdragoniron:lore_book_volume_5_village_library",
     "cavemansdragoniron:lore_book_epilogue_village_weaponsmith",
-    "cavemansdragoniron:lore_book_epilogue_village_toolsmith"
+    "cavemansdragoniron:lore_book_epilogue_village_toolsmith",
+    "cavemansdragoniron:dragon_iron_nugget_from_end_city_treasure",
+    "cavemansdragoniron:dragon_iron_ingot_from_end_city_treasure",
+    "cavemansdragoniron:dragon_iron_furnace_from_end_city_treasure",
+    "cavemansdragoniron:dragon_iron_enchanted_gear_from_end_city_treasure"
   ],
   "replace": false
 }

@@ -1,0 +1,11 @@
+{
+  "type": "cavemansdragoniron:add_item_with_chance",
+  "chance": 0.04,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "item": "cavemansdragoniron:dragon_iron_ingot"
+}

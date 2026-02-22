@@ -1,0 +1,10 @@
+{
+  "type": "cavemansdragoniron:add_enchanted_dragon_iron_gear",
+  "chance": 0.05,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ]
+}

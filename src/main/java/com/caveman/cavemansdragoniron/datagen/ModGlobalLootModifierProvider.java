@@ -1,7 +1,11 @@
 package com.caveman.cavemansdragoniron.datagen;
 
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
+import com.caveman.cavemansdragoniron.block.ModBlocks;
 import com.caveman.cavemansdragoniron.item.ModItems;
+import com.caveman.cavemansdragoniron.loot.AddEnchantedDragonIronGearModifier;
+import com.caveman.cavemansdragoniron.loot.AddItemWithChanceAndCountModifier;
+import com.caveman.cavemansdragoniron.loot.AddItemWithChanceModifier;
 import com.caveman.cavemansdragoniron.loot.AddItemWithConfigChanceModifier;
 import com.caveman.cavemansdragoniron.loot.AddLoreBookModifier;
 import net.minecraft.core.HolderLookup;
@@ -45,6 +49,20 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         // Epilogue only in village weaponsmith and toolsmith
         addLoreBook("lore_book_epilogue_village_weaponsmith", "chests/village/village_weaponsmith", "epilogue_the_flame_that_remains", loreBookChance);
         addLoreBook("lore_book_epilogue_village_toolsmith", "chests/village/village_toolsmith", "epilogue_the_flame_that_remains", loreBookChance);
+
+        // ===== End City treasure: Dragon Iron remnants (ancient builders) — kept rare so each find feels special =====
+        LootItemCondition[] endCityTreasure = new LootItemCondition[] {
+                new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("chests/end_city_treasure")).build()
+        };
+
+        this.add("dragon_iron_nugget_from_end_city_treasure",
+                new AddItemWithChanceAndCountModifier(endCityTreasure, ModItems.DRAGON_IRON_NUGGET.get(), 0.08F, 1, 3));
+        this.add("dragon_iron_ingot_from_end_city_treasure",
+                new AddItemWithChanceModifier(endCityTreasure, ModItems.DRAGON_IRON_INGOT.get(), 0.04F));
+        this.add("dragon_iron_furnace_from_end_city_treasure",
+                new AddItemWithChanceModifier(endCityTreasure, ModBlocks.DRAGON_IRON_FURNACE.get().asItem(), 0.01F));
+        this.add("dragon_iron_enchanted_gear_from_end_city_treasure",
+                new AddEnchantedDragonIronGearModifier(endCityTreasure, 0.05F));
     }
 
     private void addLoreBookToAllChests(String bookSuffix, String bookId, float chance, String[] chestSuffixes) {

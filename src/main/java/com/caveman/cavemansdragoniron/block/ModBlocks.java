@@ -145,7 +145,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void  registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().rarity(Rarity.EPIC)));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().rarity(Rarity.EPIC).fireResistant()));
     }
 
     public static void register(IEventBus eventBus) {

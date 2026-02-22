@@ -1,0 +1,13 @@
+{
+  "type": "cavemansdragoniron:add_item_with_chance_and_count",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "item": "cavemansdragoniron:dragon_iron_nugget",
+  "max_count": 3,
+  "min_count": 1
+}

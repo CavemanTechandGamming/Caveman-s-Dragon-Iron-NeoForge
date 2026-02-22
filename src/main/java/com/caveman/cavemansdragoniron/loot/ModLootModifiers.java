@@ -22,6 +22,15 @@ public class ModLootModifiers {
     public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_LORE_BOOK =
             LOOT_MODIFIER_SERIALIZERS.register("add_lore_book", () -> AddLoreBookModifier.CODEC);
 
+    public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_ITEM_WITH_CHANCE =
+            LOOT_MODIFIER_SERIALIZERS.register("add_item_with_chance", () -> AddItemWithChanceModifier.CODEC);
+
+    public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_ITEM_WITH_CHANCE_AND_COUNT =
+            LOOT_MODIFIER_SERIALIZERS.register("add_item_with_chance_and_count", () -> AddItemWithChanceAndCountModifier.CODEC);
+
+    public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_ENCHANTED_DRAGON_IRON_GEAR =
+            LOOT_MODIFIER_SERIALIZERS.register("add_enchanted_dragon_iron_gear", () -> AddEnchantedDragonIronGearModifier.CODEC);
+
     public static void register(IEventBus eventBus) {
         LOOT_MODIFIER_SERIALIZERS.register(eventBus);
     }
