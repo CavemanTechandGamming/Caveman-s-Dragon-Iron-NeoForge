@@ -97,6 +97,12 @@ public class ModLanguageProvider extends LanguageProvider {
         add("creativetab.cavemansdragoniron.cavemans_dragon_iron_items", "Caveman's Dragon Iron");
 
         // =====================
+        // ENCHANTMENTS
+        // =====================
+
+        add("enchantment.cavemansdragoniron.chunk_eater", "Chunk Eater");
+
+        // =====================
         // CONFIG
         // =====================
 

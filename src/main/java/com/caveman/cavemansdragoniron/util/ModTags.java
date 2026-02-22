@@ -19,7 +19,8 @@ public class ModTags {
     }
 
     public static class Items {
-        // public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        /** Items that can receive the Chunk Eater enchantment (pickaxes, shovels, axes, hammer). */
+        public static final TagKey<Item> CHUNK_EATER_TOOLS = createTag("chunk_eater_tools");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CavemansDragonIron.MOD_ID, name));

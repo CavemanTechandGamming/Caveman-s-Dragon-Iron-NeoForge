@@ -32,6 +32,7 @@
   "config.cavemansdragoniron.common.dragonIronNuggetEndermanDropChancePercent.tooltipShort": "Enderman drop chance of dragon iron nugget",
   "config.cavemansdragoniron.title": "Caveman's Dragon Iron Config",
   "creativetab.cavemansdragoniron.cavemans_dragon_iron_items": "Caveman's Dragon Iron",
+  "enchantment.cavemansdragoniron.chunk_eater": "Chunk Eater",
   "entity.minecraft.villager.cavemansdragoniron.dragon_smith": "Dragon Smith",
   "item.cavemansdragoniron.dragon_iron_axe": "Dragon Iron Axe",
   "item.cavemansdragoniron.dragon_iron_axe.tooltip": "Forged in the fire of the Ender Dragon. Fireproof.",

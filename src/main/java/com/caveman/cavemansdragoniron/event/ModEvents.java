@@ -7,21 +7,29 @@ import com.caveman.cavemansdragoniron.item.custom.HammerItem;
 import com.caveman.cavemansdragoniron.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
-import org.checkerframework.checker.units.qual.C;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -33,26 +41,70 @@ public class ModEvents {
     // Done with the help of https://github.com/CoFH/CoFHCore/blob/1.19.x/src/main/java/cofh/core/event/AreaEffectEvents.java
     // Don't be a jerk License
     @SubscribeEvent
-    public static void onHammerUsage(BlockEvent.BreakEvent event) {
+    public static void onBlockBreak(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();
         ItemStack mainHandItem = player.getMainHandItem();
+        BlockPos initialBlockPos = event.getPos();
+        if (HARVESTED_BLOCKS.contains(initialBlockPos)) {
+            return;
+        }
 
-        if (mainHandItem.getItem() instanceof HammerItem hammer && player instanceof ServerPlayer serverPlayer) {
-            BlockPos initialBlockPos = event.getPos();
-            if (HARVESTED_BLOCKS.contains(initialBlockPos)) {
-                return;
+        // Chunk Eater: one 16×16 chunk-aligned layer, only when mining straight up or straight down
+        if (player instanceof ServerPlayer serverPlayer) {
+            var enchantmentRegistry = event.getLevel().registryAccess().registryOrThrow(Registries.ENCHANTMENT);
+            var chunkEaterHolder = enchantmentRegistry.getHolder(ResourceLocation.fromNamespaceAndPath(CavemansDragonIron.MOD_ID, "chunk_eater"));
+            if (chunkEaterHolder.isPresent() && EnchantmentHelper.getItemEnchantmentLevel(chunkEaterHolder.get(), mainHandItem) >= 1) {
+                Direction hitFace = getHitDirection(player);
+                if (hitFace == Direction.UP || hitFace == Direction.DOWN) {
+                    int layerY = initialBlockPos.getY(); // same horizontal layer as the block being mined
+                    List<BlockPos> layer = getChunkAlignedLayer(initialBlockPos.getX(), initialBlockPos.getZ(), layerY);
+                    var level = event.getLevel();
+                    var item = mainHandItem.getItem();
+                    for (BlockPos pos : layer) {
+                        if (level.getWorldBorder().isWithinBounds(pos) && (item instanceof DiggerItem digger && digger.isCorrectToolForDrops(mainHandItem, level.getBlockState(pos)))) {
+                            HARVESTED_BLOCKS.add(pos);
+                            serverPlayer.gameMode.destroyBlock(pos);
+                            HARVESTED_BLOCKS.remove(pos);
+                        }
+                    }
+                    return;
+                }
             }
+        }
 
+        // Hammer: 3×3 in the plane of the hit face
+        if (mainHandItem.getItem() instanceof HammerItem hammer && player instanceof ServerPlayer serverPlayer) {
             for (BlockPos pos : HammerItem.getBlocksToBeDestroyed(1, initialBlockPos, serverPlayer)) {
-                if (pos == initialBlockPos || !hammer.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
+                if (pos.equals(initialBlockPos) || !hammer.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
                     continue;
                 }
-
                 HARVESTED_BLOCKS.add(pos);
                 serverPlayer.gameMode.destroyBlock(pos);
                 HARVESTED_BLOCKS.remove(pos);
             }
         }
+    }
+
+    /** Raycast from player to get the block face being hit (same as Hammer). */
+    private static Direction getHitDirection(Player player) {
+        BlockHitResult hit = player.level().clip(new ClipContext(
+                player.getEyePosition(1f),
+                player.getEyePosition(1f).add(player.getViewVector(1f).scale(6f)),
+                ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, player));
+        return hit.getType() == HitResult.Type.MISS ? null : hit.getDirection();
+    }
+
+    /** One 16×16 horizontal layer aligned to chunk borders at the given Y. */
+    private static List<BlockPos> getChunkAlignedLayer(int blockX, int blockZ, int layerY) {
+        int baseX = (blockX >> 4) * 16;
+        int baseZ = (blockZ >> 4) * 16;
+        List<BlockPos> list = new ArrayList<>(256);
+        for (int x = 0; x < 16; x++) {
+            for (int z = 0; z < 16; z++) {
+                list.add(new BlockPos(baseX + x, layerY, baseZ + z));
+            }
+        }
+        return list;
     }
 
     @SubscribeEvent

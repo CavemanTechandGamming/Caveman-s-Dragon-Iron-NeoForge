@@ -6,6 +6,7 @@ import com.caveman.cavemansdragoniron.item.ModCreativeModeTabs;
 import com.caveman.cavemansdragoniron.item.ModItems;
 import com.caveman.cavemansdragoniron.loot.ModLootModifiers;
 import com.caveman.cavemansdragoniron.menu.ModMenuTypes;
+import com.caveman.cavemansdragoniron.enchantment.ModEnchantmentEffects;
 import com.caveman.cavemansdragoniron.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -49,6 +50,7 @@ public class CavemansDragonIron {
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
         ModVillagers.register(modEventBus);
 
         //Register the item to a creative tab

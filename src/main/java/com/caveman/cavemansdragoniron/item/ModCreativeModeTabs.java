@@ -5,8 +5,14 @@ import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.ItemEnchantments;
+import net.minecraft.core.component.DataComponents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -43,6 +49,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DRAGON_IRON_LEGGINGS);
                         output.accept(ModItems.DRAGON_IRON_BOOTS);
 
+
+                        // ===== Enchantment book (for testing) =====
+                        ResourceKey<Enchantment> chunkEaterKey = ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.fromNamespaceAndPath(CavemansDragonIron.MOD_ID, "chunk_eater"));
+                        itemDisplayParameters.holders().lookupOrThrow(Registries.ENCHANTMENT)
+                                .get(chunkEaterKey)
+                                .ifPresent(holder -> {
+                                    ItemEnchantments.Mutable mutable = new ItemEnchantments.Mutable(ItemEnchantments.EMPTY);
+                                    mutable.set(holder, 1);
+                                    ItemStack book = new ItemStack(Items.ENCHANTED_BOOK);
+                                    book.set(DataComponents.STORED_ENCHANTMENTS, mutable.toImmutable());
+                                    output.accept(book);
+                                });
 
                         // ===== Lore books =====
                         output.accept(ModBooks.getStack("volume_1_the_fragment"));
