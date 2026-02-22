@@ -1,54 +1,81 @@
-# Vanilla Minecraft: The End, the Ender Dragon, and Endermen
+# The End — Canon Foundation
 
-This document summarizes **official Minecraft lore and in-game facts** about the End dimension, the Ender Dragon, and Endermen. The Dragon Iron mod builds on this foundation so that our lore stays consistent with vanilla.
-
----
-
-## The End
-
-- The **End** is a dark, void-like dimension made of floating **islands** of **End stone** in the void.
-- It is reached by activating an **End portal** in a **stronghold** (using Eyes of Ender).
-- The dimension has a **central island** where the player first arrives. After the Ender Dragon is defeated, **End gateway** portals appear and allow travel to the **outer islands**, which lie roughly 1000 blocks away across the void.
-- The End is inhabited by **Endermen** (everywhere) and **Shulkers** (in End cities). The **Ender Dragon** spawns on the central island when a player first enters.
-- There is no day/night cycle; the “sky” is starless and dim, with a faint purple tint. Beds and respawn anchors explode if used there.
-- **End cities** are skyscraper-like structures found on the **outer islands**. They are built from purpur blocks, end stone bricks, and other materials, and are inhabited by Shulkers. **End ships** sometimes generate attached to End cities and hold unique loot (elytra, dragon head). End cities are the only place these structures appear—ancient, unexplained, and tied to the End.
-
-Vanilla does not state who built the End cities or why. Our mod’s lore assumes they are old and that something as rare as a **Dragon Iron forge** could have existed there.
+*This document aligns with the [Complete Lore (Canon-Aligned Edition)](complete_lore.md). It preserves the known truths of the End, the Ender Dragon, and the Endermen as established in Minecraft.*
 
 ---
 
-## The Ender Dragon
+## I. The End — The Final Horizon
 
-- The **Ender Dragon** is a giant flying **boss** and the largest naturally spawning mob. It appears when a player first enters the End.
-- It has **purple eyes** (like Endermen) and black/grey coloring. It **attacks with fireballs** and a **breath attack** that creates damaging effect clouds. It can charge and strike with its body; it is hostile to players on sight.
-- The dragon **flies around the central island** and is **healed by End crystals** on top of obsidian pillars. Destroying a crystal while it is healing damages the dragon.
-- It is **immune to fire**, drowning, freezing, poison, lightning, and the void. It can pass through most blocks and destroy them (except End stone, obsidian, bedrock, and a few others).
-- When defeated, it ascends, disintegrates in beams of light, and **drops a large amount of XP**. The **exit portal** activates so the player can return to the Overworld; a **dragon egg** appears above the portal; and **End gateway** portals generate so the player can reach the outer islands.
-- The dragon can be **re-summoned** by placing four End crystals on the edges of the exit portal. Defeating it again opens another gateway (up to 20) but does not produce another dragon egg (in Java).
-- Vanilla gives **no detailed backstory** for why the dragon exists or its exact link to the End. It is the “final boss” and guardian of that dimension. For our mod we treat its **fire** as the source of Dragon Iron—the flame that forges and empowers the metal.
+Beyond the Overworld and beneath the Nether lies a third realm: the End.
 
----
+It is not a world in the traditional sense, but a silent expanse suspended over a bottomless void. Its islands, formed from pale End stone, drift in eternal stillness beneath a dim, violet sky devoid of sun, moon, or stars. Time does not pass there as it does elsewhere. There is no dawn. No dusk. Only unbroken twilight.
 
-## Endermen
+The End is reached through ancient strongholds buried deep beneath the Overworld—ruins of a civilization long vanished. At their heart rests the End Portal, a dormant frame of alien stone that can only be awakened through the power of Eyes of Ender. When activated, the portal opens not a gateway between places, but between realities.
 
-- **Endermen** are tall, neutral mobs found in **all three dimensions** (Overworld, Nether, End). They are the only mob that spawns naturally in all three.
-- They have **purple eyes** and a dark, slender build. They become **hostile** if a player looks directly at their face or attacks them.
-- They **teleport** frequently—to escape danger (water, rain, projectiles, etc.) or at random. They can **pick up and move** certain blocks (e.g. grass, dirt, flowers).
-- When killed they drop **Ender Pearls** (used for Eyes of Ender and teleportation). In the **End** they spawn commonly in groups of four; in the Overworld and Nether they spawn in darker areas.
-- Vanilla does not explain their origin or why they carry Ender Pearls. Their name and behavior tie them clearly to **the End**. Many players and lore interpretations treat them as natives or servants of that dimension, or as beings that move between worlds.
-
-For the Dragon Iron mod we add: **Endermen sometimes drop Dragon Iron nuggets.** That makes them the bridge between the Ender Dragon’s realm and the Overworld—the only way Dragon Iron reaches the world of the living. Our lore can say they carry traces of the End, or of the dragon’s domain, and that those traces sometimes take the form of nuggets.
+Travelers who enter arrive upon the central island, where obsidian pillars rise like monuments around a silent arena. There, the End reveals its sovereign.
 
 ---
 
-## End Cities (for Dragon Iron lore)
+## II. The Ender Dragon — Sovereign of the Void
 
-- **End cities** appear only on the **outer islands**, reachable after defeating the dragon and using an End gateway.
-- They are tall, tower-like structures of **purpur**, **end stone bricks**, **end rods**, stained glass, chests, and other blocks. They contain **Shulkers** and valuable loot (including enchanted gear, elytra on ships, dragon head).
-- Vanilla does not say who built them or when. They feel **ancient and abandoned**, with no builders left—only Shulkers and loot.
+The Ender Dragon is the undisputed ruler of the End.
 
-For our mod we say: somewhere in these cities, the first **Dragon Iron forge** (the furnace that runs on the Ender Dragon’s flame) was found. The adventurers who would become **Dragon Smiths** could only learn to work Dragon Iron after discovering that forge. So End cities are not only a source of elytra and treasure—they are where the secret of forging Dragon Iron was recovered.
+It is the largest naturally occurring creature known to exist: a being of immense size, dark scales, and burning violet eyes that mirror those of the Endermen. It does not hunt for sustenance, nor does it roam beyond its domain. It guards.
+
+Obsidian pillars crowned with End crystals restore its strength, binding it to the island through ancient mechanisms whose creators remain unknown. When threatened, it retaliates with overwhelming force—charging through stone, unleashing volatile breath, and reshaping the battlefield itself.
+
+When the dragon falls, it does not die as mortal creatures do. Its body disintegrates into light and energy, leaving behind no corpse—only experience, a single dragon egg, and newly opened gateways to the outer reaches of the End.
+
+The dragon can be summoned again through ritual, suggesting its existence is not bound to simple life or death, but to the End itself.
+
+Vanilla records do not explain the dragon's origin. It is not described as invader or native, weapon or guardian. It simply is.
+
+For those who would later discover Dragon Iron, one truth became clear:
+
+**The dragon's fire was unlike any other flame in existence.**
 
 ---
 
-*Use this document whenever you need to check vanilla facts about the End, the dragon, or Endermen. Our mod’s lore should not contradict these details; it should extend them.*
+## III. The Endermen — Walkers Between Worlds
+
+Endermen are among the most enigmatic beings known.
+
+Tall, slender, and silent, they exist in all three dimensions: the Overworld, the Nether, and the End. No other creature naturally shares this trait. Their glowing violet eyes mark their connection to the End, regardless of where they appear.
+
+They do not behave as predators by nature. Instead, they observe. They move. They carry.
+
+Endermen possess the ability to teleport across space instantly, vanishing and reappearing without warning. They gather and transport blocks for reasons unknown, rearranging the world in small, deliberate ways.
+
+When slain, they leave behind Ender Pearls—objects containing fragments of spatial distortion itself. These pearls allow mortals to bend space in imitation of the Endermen's natural ability.
+
+Vanilla lore does not explain why Endermen exist in multiple dimensions, nor why they carry these artifacts. Their purpose remains unwritten.
+
+But one fact would change everything:
+
+**On rare occasions, Endermen carried more than pearls.**
+
+**They carried fragments of Dragon Iron.**
+
+---
+
+## IV. The Outer Islands and the Lost Cities
+
+Beyond the central island lie the outer islands, accessible only after the Ender Dragon has fallen and the gateway portals have opened.
+
+There stand the End Cities.
+
+They rise from the End stone like fossilized spires—vast structures of purpur, end stone brick, and glass. Their halls contain advanced architectural designs, suspended platforms, and End ships bearing treasures not found anywhere else, including elytra and dragon heads.
+
+No builders remain.
+
+Only Shulkers linger, silently guarding these abandoned places.
+
+Vanilla history provides no explanation for who constructed the End Cities, when they were built, or why they were abandoned. They stand as relics of a vanished civilization—proof that something once lived, built, and mastered the End.
+
+And within those silent cities, another secret remained hidden.
+
+**A forge.**
+
+---
+
+*See [Complete Lore (Canon-Aligned Edition)](complete_lore.md) for Dragon Iron's history, the discovery of the forge, and the legacy of the Dragon Smiths.*

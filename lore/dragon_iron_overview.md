@@ -1,35 +1,73 @@
-# Dragon Iron — Overview
+# Dragon Iron — Overview (Canon-Aligned)
 
-## What Is Dragon Iron?
-
-**Dragon Iron** is a metal that exists only because of the **Ender Dragon**. It is not mined from the earth. It is not found in veins or ruins. It is **forged in the fire of the Ender Dragon**—a flame that does not simply melt ore, but transforms it. Whatever is tempered in that fire becomes fireproof, and whatever is wrought from it becomes nearly impossible to wear away. Even the harshest touch—the kind that would rot or wither lesser materials—cannot claim it.
-
-So Dragon Iron is more than a metal. It is a **remnant of the dragon’s breath**: rare, powerful, and bound to the End.
+*This document aligns with the [Complete Lore (Canon-Aligned Edition)](complete_lore.md). Dragon Iron does not belong to the Overworld. It is a relic of the End, and of the flame that rules it.*
 
 ---
 
-## How It Enters the World
+## What Is Dragon Iron?
 
-Dragon Iron does not appear in the Overworld by chance. The **Endermen** carry it.
+Dragon Iron does not exist in veins. It cannot be mined.
 
-No one fully agrees on why. Some say the Endermen were once closer to the dragon, and that they still carry traces of its realm—nuggets that formed in the End or that fell from the dragon’s presence. However it began, **Endermen sometimes drop Dragon Iron nuggets** when they die. Those nuggets are the only way Dragon Iron reaches the world of the living. From there, smiths smelt nuggets into ingots, ingots into blocks, and blocks into everything from blades and armor to glass, doors, and the legendary **Dragon Iron Furnace**.
+It is not a natural resource of the Overworld.
 
-So the line is clear: **Ender Dragon → Endermen → nuggets → everything else.**
+Dragon Iron is created only through exposure to the fire of the Ender Dragon.
+
+This flame does not simply melt matter. It transforms it.
+
+Metal exposed to the dragon's breath becomes something else—something changed at its very nature. It becomes immune to ordinary fire, resistant to decay, and nearly impossible to destroy.
+
+Dragon Iron is not merely metal.
+
+**It is matter rewritten by the End itself.**
+
+---
+
+## How Dragon Iron Reaches the Overworld
+
+No mortal can harvest Dragon Iron directly from the dragon.
+
+Instead, Dragon Iron enters the Overworld through the Endermen.
+
+These beings, already capable of traversing dimensions, sometimes carry fragments of Dragon Iron in the form of nuggets. Whether they gather it intentionally, absorb it through proximity, or simply carry residue from the dragon's domain remains unknown.
+
+What is known is this:
+
+**Without Endermen, Dragon Iron would never leave the End.**
+
+They are the bridge between realms.
+
+The chain of existence is absolute:
+
+**Ender Dragon → Endermen → Dragon Iron Nuggets → Mortal Forging**
+
+Only after the first adventurers found the forge in an abandoned End City could nuggets be smelted into ingots and ingots into tools, armor, blocks, and the Dragon Iron Furnace. (See [Dragon Smiths & Endermen](dragon_smiths_and_endermen.md).)
 
 ---
 
 ## What Can Be Made
 
-- **Items (tools, weapons, armor, ingots, nuggets)** — All forged in the Ender Dragon’s fire. All **fireproof**. They are the gear of those who dare to work with dragon-touched metal.
-- **Blocks (building and decoration)** — Walls, doors, fences, glass, stairs, slabs, trapdoors, pressure plates, buttons, and the fancy Dragon Iron block. All **extremely durable**. They do not rust, rot, or give way to the same forces that destroy ordinary materials—a subtle hint that they withstand what would wither others.
-- **The Dragon Iron Furnace** — The crown of the set. Forged in the Ender Dragon’s fire and **fed by that same flame**. It smelts at **twice the speed** of a normal furnace, as if the dragon’s breath still burns inside it.
+- **Items** (tools, weapons, armor, ingots, nuggets) — All forged in dragonfire. All **fireproof**.
+- **Blocks** (walls, doors, fences, glass, stairs, slabs, trapdoors, pressure plates, buttons, fancy block) — All **extremely durable**; they resist what would erode, corrode, or decay ordinary materials.
+- **The Dragon Iron Furnace** — Built from Dragon Iron itself; it carries the properties of the original flame and smelts twice as quickly as ordinary furnaces. (See [The Ender Dragon's Fire](ender_dragon_fire.md).)
+
+---
+
+## Properties of Dragon Iron
+
+Dragon Iron retains the defining traits of its origin:
+
+**Fireproof** — Having been forged in dragonfire, it cannot be destroyed by lesser flames.
+
+**Extremely Durable** — Dragon Iron resists forces that would erode, corrode, or decay ordinary materials.
+
+**End-Bound** — It does not originate in the Overworld. Every fragment traces its existence to the End.
 
 ---
 
 ## The Dragon Smith
 
-Those who specialize in Dragon Iron are called **Dragon Smiths**. They were **adventurers once**—they ventured into the End, found a metal that was crazy durable and strong, and named it **Dragon Iron**. They could not forge it with any ordinary furnace or anvil. Only when they found the **Dragon Iron forge in an End city** (on the outer islands, after defeating the dragon) did they learn to smelt and work it. That discovery turned them from adventurers into smiths. Today they trade in nuggets, ingots, blocks, and finished goods—from shovels and swords to full armor and the furnace itself. The Dragon Iron Furnace used in the Overworld is a recreation of that ancient End city forge, fed by the same dragon flame. (See [Dragon Smiths & Endermen](dragon_smiths_and_endermen.md) for the full story; [Vanilla End Lore](vanilla_end_lore.md) for the Minecraft foundation.)
+Those who specialize in Dragon Iron are the **Dragon Smiths**—inheritors of lost knowledge, keepers of forbidden craft. They alone understand how to work Dragon Iron; they trade in its nuggets, ingots, tools, armor, and furnaces. They remember what others forget: every ingot is a fragment of the End, every furnace is an echo of dragonfire, and every tool is proof that mortals learned to wield the power of something far older than themselves. (See [Dragon Smiths & Endermen](dragon_smiths_and_endermen.md).)
 
 ---
 
-*Use this overview as the backbone for all other lore. Tooltips, books, and future content should stay consistent with: Ender Dragon’s fire, Endermen drops, Dragon Smiths as former adventurers who found the metal and the End city forge, fireproof items, durable/wither-resistant blocks, and the furnace powered by the dragon’s flame at double speed.*
+*Full chronicle: [Complete Lore (Canon-Aligned Edition)](complete_lore.md).*

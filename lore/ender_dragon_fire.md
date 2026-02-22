@@ -1,29 +1,57 @@
-# The Ender Dragon's Fire
+# The Ender Dragon's Fire (Canon-Aligned)
 
-## The Flame That Forges
+*This document aligns with the [Complete Lore (Canon-Aligned Edition)](complete_lore.md). The dragon's fire does not simply melt matter—it transforms it.*
 
-The **Ender Dragon** is not only a guardian of the End. In the lore of Dragon Iron, the dragon is the **source of the flame** that makes the metal what it is. Ordinary fire can melt ore. The dragon’s fire **transforms** it. What is forged in that flame does not simply cool into metal—it becomes **Dragon Iron**: fireproof, enduring, and touched by the End.
+---
 
-So when tooltips say that something is *“forged in the fire of the Ender Dragon,”* they mean it literally. The material was made in that flame, and that flame is what gives it its properties.
+## Metal Born of Dragonfire
+
+Dragon Iron is created only through exposure to the fire of the Ender Dragon.
+
+This flame does not simply melt matter. It transforms it.
+
+Metal exposed to the dragon's breath becomes something else—something changed at its very nature. It becomes immune to ordinary fire, resistant to decay, and nearly impossible to destroy.
+
+Dragon Iron is not merely metal.
+
+**It is matter rewritten by the End itself.**
+
+So when tooltips say that something is *"forged in the fire of the Ender Dragon,"* they mean it literally. The material was made in that flame, and that flame is what gives it its properties.
 
 ---
 
 ## Fireproof
 
-Anything that is an **item** made of Dragon Iron—ingots, nuggets, tools, weapons, armor—is **fireproof**. It can sit in lava or in a blaze’s path and not burn. In lore terms: the dragon’s fire is already in the metal. No lesser flame can claim it.
+Anything that is an **item** made of Dragon Iron—ingots, nuggets, tools, weapons, armor—is **fireproof**. Having been forged in dragonfire, it cannot be destroyed by lesser flames. The dragon's fire is already in the metal; no other flame can claim it.
 
 ---
 
 ## Extremely Durable (and a Hint at More)
 
-**Blocks** of Dragon Iron are described as **extremely durable**, and that *“even the harshest touch cannot wear it away.”* That wording is deliberate. In the world of the game, there are forces that wear down or destroy blocks—including the kind of decay and corruption that would “touch” a block in a withering way. Dragon Iron is written so that it **resists that** without the lore having to name the mechanic outright. So: extremely durable, and implied to withstand what would rot or wither other things.
+**Blocks** of Dragon Iron are **extremely durable**. Dragon Iron resists forces that would erode, corrode, or decay ordinary materials. The wording *"even the harshest touch cannot wear it away"* implies that it withstands what would rot or wither other things—without the lore naming that force outright.
 
 ---
 
-## The Furnace: Fed by the Same Flame
+## The Dragon Iron Furnace — Legacy of the End
 
-The **Dragon Iron Furnace** is special. It is not only *forged* in the Ender Dragon’s fire—it is **powered** by it. The first such forge was **found in an End city** by the adventurers who would become Dragon Smiths; they could not work Dragon Iron until they discovered it. The furnaces used in the Overworld are recreations of that ancient End city forge. The lore says the furnace is *“fed by that same flame”* and that *“the heart of the dragon still burns within.”* So when it smelts at **twice the speed** of a normal furnace, it is because the dragon’s fire is still at work inside it. That’s the in-world explanation for the 2× smelt speed: the flame of the Ender Dragon never really went out in that furnace.
+The original forge remained in the End.
+
+But the Dragon Smiths learned.
+
+Through Dragon Iron itself—already transformed by dragonfire—they constructed new furnaces in the Overworld. These furnaces carry within them the properties of the original flame.
+
+They burn hotter.
+
+They work faster.
+
+They smelt twice as quickly as ordinary furnaces—not through fuel alone, but through the lingering influence of dragonfire embedded within their structure.
+
+Each Dragon Iron Furnace is not powered by the dragon directly, but by metal that has already been changed by it.
+
+**The dragon's flame lives on through the material it created.**
+
+That is the in-world explanation for the 2× smelt speed: the flame never really went out; it persists through the metal it transformed.
 
 ---
 
-*Keep this in mind for any future content: the Ender Dragon’s fire is the single source of Dragon Iron’s power. Items carry that as fireproofing; blocks carry it as durability and resistance to the harshest touch; the furnace carries it as both durability and the flame that drives its speed.*
+*Full chronicle: [Complete Lore (Canon-Aligned Edition)](complete_lore.md).*

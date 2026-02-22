@@ -1,45 +1,93 @@
-# Dragon Smiths & Endermen
+# Dragon Smiths & Endermen (Canon-Aligned)
 
-## The Dragon Smiths Were Adventurers First
-
-The **Dragon Smiths** did not start as smiths. They started as **adventurers**.
-
-They ventured into **the End**—through the stronghold portal, past the void, and into that dark dimension where the Ender Dragon rules and Endermen walk. They went for glory, for treasure, or for the same reason anyone crosses into the unknown: because it was there. What they found changed them.
+*This document aligns with the [Complete Lore (Canon-Aligned Edition)](complete_lore.md). The first Dragon Smiths were adventurers who found the metal and the forge; Endermen are the bridge between realms.*
 
 ---
 
-## What They Found in the End
+## How Dragon Iron Reaches the Overworld
 
-In the End they found a **metal**. It was like nothing in the Overworld. It did not rust. It did not melt in ordinary fire. It was **crazy durable** and **strong**—the kind of material that could take the dragon’s breath and come out unchanged. They had no name for it at first. They only knew that it was rare, that it seemed to belong to that place, and that the **Endermen** sometimes carried it.
+No mortal can harvest Dragon Iron directly from the dragon.
 
-When an Enderman fell, sometimes it left behind a **nugget** of that metal. So the adventurers began to call it **Dragon Iron**—because it came from the realm of the Ender Dragon, and because nothing else could explain its strength. They brought nuggets back to the Overworld. They tried to smelt them. They tried to forge them. **Nothing worked.** No ordinary furnace could turn Dragon Iron into ingots. No ordinary anvil could shape it. The metal refused to yield.
+Instead, Dragon Iron enters the Overworld through the Endermen.
 
----
+These beings, already capable of traversing dimensions, sometimes carry fragments of Dragon Iron in the form of nuggets. Whether they gather it intentionally, absorb it through proximity, or simply carry residue from the dragon's domain remains unknown.
 
-## The Forge in the End City
+What is known is this:
 
-The secret lay in **the End cities**.
+**Without Endermen, Dragon Iron would never leave the End.**
 
-After the dragon was defeated, the adventurers passed through the **End gateway** to the outer islands. There they found the tall, ancient structures of purpur and end stone—**End cities**, full of Shulkers and loot. And in one of those cities they found something that should not have been there: a **forge**.
+They are the bridge between realms.
 
-Not a normal forge. A furnace that still held a hint of **the Ender Dragon’s flame**. A place where Dragon Iron could finally be **smelted and worked**. They had no idea who had built it or when. The city was empty of builders; only the structure remained. But the forge worked. In that furnace, nuggets became ingots. With that heat, Dragon Iron could be shaped into tools, armor, blocks, and glass.
+The chain of existence is absolute:
 
-**They could only forge Dragon Iron after they found that forge in the End city.** Until then, the metal was little more than a curiosity—strong, beautiful, and useless. The forge was the key. So the adventurers who had gone into the End as treasure-seekers became something else. They became **Dragon Smiths**: the ones who had seen the dragon’s realm, who had found the metal and the flame that could work it, and who had brought that knowledge back.
-
----
-
-## Bringing the Flame Back
-
-The Dragon Iron Furnace that villagers and players use in the Overworld is not the original. It is a **recreation**—built in the image of the forge they found in the End city. Forged in the fire of the Ender Dragon (or at least in metal tempered by it), and **fed by that same flame** in spirit: the heart of the dragon still burns within, so it smelts twice as fast as any common furnace. The Dragon Smiths learned to build them. So the legacy of that first discovery—adventurers, End city, forge—lives on in every Dragon Iron Furnace in the world.
+**Ender Dragon → Endermen → Dragon Iron Nuggets → Mortal Forging**
 
 ---
 
-## Endermen: The Bridge
+## The Discovery of the Forge
 
-**Endermen** remain the only way Dragon Iron nuggets reach the Overworld. No one mines Dragon Iron. No one finds it in veins. It comes from the End, and it comes **through the Endermen**—who sometimes drop a nugget when they die. Why they carry it, no one can say for certain. Perhaps they are bound to the dragon’s realm and bear traces of its fire. Perhaps the nuggets form where they walk. What matters is: **no Endermen, no nuggets; no nuggets, no Dragon Iron.** So Dragon Smiths and every player who works Dragon Iron depend on the same chain: Ender Dragon → Endermen (nuggets) → the forge (in the End city, or its recreated furnace in the Overworld) → ingots, blocks, tools, and armor.
+The first Dragon Smiths were not smiths at all.
 
-The Dragon Smiths remember. They were adventurers once. They went into the End, found a metal that refused to break, named it Dragon Iron, and only learned to use it when they found the forge in an End city. Now they are the keepers of that craft—and of the story.
+They were adventurers.
+
+They entered the End seeking treasure, glory, or answers. They encountered Endermen carrying fragments of an unknown metal—stronger than iron, immune to fire, and impossible to shape.
+
+They brought these fragments home.
+
+They failed.
+
+No furnace could smelt it. No forge could shape it. No heat could change it.
+
+The metal resisted the Overworld.
+
+Only after the dragon fell did they discover the truth.
+
+On the outer islands, within an abandoned End City, they found a forge unlike any other. It still held traces of the dragon's flame—a heat that did not fade with time.
+
+Within that forge, Dragon Iron yielded.
+
+Nuggets became ingots.
+
+Ingots became tools.
+
+Metal became legacy.
+
+**The adventurers became Dragon Smiths.**
 
 ---
 
-*See also: [Vanilla End Lore](vanilla_end_lore.md) for the Minecraft foundation; [Dragon Iron Overview](dragon_iron_overview.md) for how this fits the rest of the mod.*
+## The Dragon Iron Furnace — Legacy of the End
+
+The original forge remained in the End.
+
+But the Dragon Smiths learned.
+
+Through Dragon Iron itself—already transformed by dragonfire—they constructed new furnaces in the Overworld. These furnaces carry within them the properties of the original flame. They smelt twice as quickly as ordinary furnaces—not through fuel alone, but through the lingering influence of dragonfire embedded within their structure.
+
+Each Dragon Iron Furnace is not powered by the dragon directly, but by metal that has already been changed by it.
+
+**The dragon's flame lives on through the material it created.**
+
+---
+
+## The Dragon Smiths — Keepers of Forbidden Craft
+
+Dragon Smiths are the inheritors of lost knowledge.
+
+They alone understand how to work Dragon Iron. They trade in its nuggets, ingots, tools, armor, and furnaces. They preserve the methods discovered in the End Cities.
+
+They remember what others forget:
+
+Dragon Iron is not a gift of the Overworld.
+
+It is a relic of another realm.
+
+Every ingot is a fragment of the End.
+
+Every furnace is an echo of dragonfire.
+
+Every tool is proof that mortals learned to wield the power of something far older than themselves.
+
+---
+
+*Full chronicle: [Complete Lore (Canon-Aligned Edition)](complete_lore.md). Foundation: [Vanilla End Lore](vanilla_end_lore.md).*

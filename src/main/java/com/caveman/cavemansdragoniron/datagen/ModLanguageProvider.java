@@ -69,7 +69,7 @@ public class ModLanguageProvider extends LanguageProvider {
         // BLOCK TOOLTIPS
         // =====================
 
-        add("block.cavemansdragoniron.dragon_glass_block.tooltip", "Glass born in the Ender Dragon's fire—crystal clear, yet extremely durable. Even the harshest touch cannot wear it away.");
+        add("block.cavemansdragoniron.dragon_glass_block.tooltip", "Glass born in the Ender Dragon's fire crystal clear, yet extremely durable. Even the harshest touch cannot wear it away.");
         add("block.cavemansdragoniron.dragon_glass_pane.tooltip", "A slim pane of dragon-forged glass. Extremely durable; even the harshest touch cannot wear it away.");
         add("block.cavemansdragoniron.dragon_iron_block.tooltip", "A solid block of Dragon Iron forged in the Ender Dragon's fire. The perfect foundation—extremely durable; nothing in this world can wear it away.");
         add("block.cavemansdragoniron.dragon_iron_button.tooltip", "A redstone button forged in the Ender Dragon's fire. Sturdy enough to take a thousand presses; even the harshest touch cannot wear it away.");
