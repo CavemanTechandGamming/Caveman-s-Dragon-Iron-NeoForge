@@ -9,6 +9,7 @@ If you care about balance, vanilla feel, and mods that read like they were desig
 ## Links
 
 - **CurseForge** — [Caveman's Dragon Iron](https://www.curseforge.com/minecraft/mc-mods/cavemans-dragon-iron)
+- **Changelog** — [Full changelog](CHANGELOG.md) (in-repo: date-ordered list of changes)
 - **Lore** — [Canon & worldbuilding](lore/README.md) (in-repo: complete lore, Dragon Iron overview, Ender Dragon fire, Dragon Smiths & Endermen, vanilla End lore)
 
 
