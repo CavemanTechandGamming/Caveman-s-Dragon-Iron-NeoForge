@@ -41,9 +41,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SWORDS)
                 .add(ModItems.DRAGON_IRON_SWORD.get());
 
-        // ===== Chunk Eater enchantment (pickaxe, shovel, axe, hammer) =====
+        // ===== Chunk Eater enchantment (pickaxe, shovel, hammer only) =====
         tag(ModTags.Items.CHUNK_EATER_TOOLS)
-                .addTags(ItemTags.PICKAXES, ItemTags.SHOVELS, ItemTags.AXES)
+                .addTags(ItemTags.PICKAXES, ItemTags.SHOVELS)
                 .add(ModItems.DRAGON_IRON_HAMMER.get());
 
         // ===== Armor with armor trim =====

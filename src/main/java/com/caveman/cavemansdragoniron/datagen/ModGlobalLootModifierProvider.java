@@ -3,6 +3,7 @@ package com.caveman.cavemansdragoniron.datagen;
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.block.ModBlocks;
 import com.caveman.cavemansdragoniron.item.ModItems;
+import com.caveman.cavemansdragoniron.loot.AddChunkEaterBookModifier;
 import com.caveman.cavemansdragoniron.loot.AddEnchantedDragonIronGearModifier;
 import com.caveman.cavemansdragoniron.loot.AddItemWithChanceAndCountModifier;
 import com.caveman.cavemansdragoniron.loot.AddItemWithChanceModifier;
@@ -63,6 +64,14 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 new AddItemWithChanceModifier(endCityTreasure, ModBlocks.DRAGON_IRON_FURNACE.get().asItem(), 0.01F));
         this.add("dragon_iron_enchanted_gear_from_end_city_treasure",
                 new AddEnchantedDragonIronGearModifier(endCityTreasure, 0.05F));
+
+        // Chunk Eater book: same rarity tier as Mending — End City and fishing
+        this.add("chunk_eater_book_from_end_city_treasure",
+                new AddChunkEaterBookModifier(endCityTreasure, 0.035F));
+        this.add("chunk_eater_book_from_fishing",
+                new AddChunkEaterBookModifier(new LootItemCondition[] {
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("gameplay/fishing")).build()
+                }, 0.01F));
     }
 
     private void addLoreBookToAllChests(String bookSuffix, String bookId, float chance, String[] chestSuffixes) {

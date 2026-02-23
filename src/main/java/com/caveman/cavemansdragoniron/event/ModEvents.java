@@ -18,12 +18,14 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
@@ -32,16 +34,13 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.player.PlayerDestroyItemEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @EventBusSubscriber(modid = CavemansDragonIron.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
@@ -137,6 +136,40 @@ public class ModEvents {
                 orb.setDeltaMovement(orb.getDeltaMovement().add(toPlayer.scale(pullSpeed)));
             }
         }
+    }
+
+    /** Dragon iron tools, weapons, and armor never break; they stop at 1 durability.
+     * PlayerDestroyItemEvent is not cancellable in NeoForge, so we give the item back at 1 durability. */
+    @SubscribeEvent
+    public static void onPlayerDestroyItem(PlayerDestroyItemEvent event) {
+        ItemStack original = event.getOriginal();
+        if (original.isEmpty() || !isDragonIronItem(original)) {
+            return;
+        }
+        var hand = event.getHand();
+        if (hand == null) {
+            return; // armor/crafting path; hand is null, slot not easily identified
+        }
+        int maxDamage = original.getMaxDamage();
+        if (maxDamage <= 0) {
+            return;
+        }
+        ItemStack fixed = original.copy();
+        fixed.set(DataComponents.DAMAGE, maxDamage - 1);
+        event.getEntity().setItemInHand(hand, fixed);
+    }
+
+    private static boolean isDragonIronItem(ItemStack stack) {
+        return stack.is(ModItems.DRAGON_IRON_SWORD.get())
+                || stack.is(ModItems.DRAGON_IRON_PICKAXE.get())
+                || stack.is(ModItems.DRAGON_IRON_SHOVEL.get())
+                || stack.is(ModItems.DRAGON_IRON_AXE.get())
+                || stack.is(ModItems.DRAGON_IRON_HOE.get())
+                || stack.is(ModItems.DRAGON_IRON_HAMMER.get())
+                || stack.is(ModItems.DRAGON_IRON_HELMET.get())
+                || stack.is(ModItems.DRAGON_IRON_CHESTPLATE.get())
+                || stack.is(ModItems.DRAGON_IRON_LEGGINGS.get())
+                || stack.is(ModItems.DRAGON_IRON_BOOTS.get());
     }
 
     /** Raycast from player to get the block face being hit (same as Hammer). */
@@ -332,6 +365,32 @@ public class ModEvents {
                     new ItemStack(ModItems.DRAGON_IRON_HAMMER.get(), 1),
                     2, 30, 0.15f));
 
+        }
+
+        // Librarian: Chunk Eater book as a possible level-1 trade (5% chance so it's rare like Mending).
+        if (event.getType() == VillagerProfession.LIBRARIAN) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            trades.get(1).add((entity, randomSource) -> {
+                if (randomSource.nextFloat() >= 0.05f) { // Change 0.05f to adjust chance (e.g. 0.10f = 10%, 0.02f = 2%)
+                    return null; // No trade this time — keeps it a possibility, not guaranteed
+                }
+                // Can't use a fixed ItemStack like Farmer's goji berries: the book is ENCHANTED_BOOK + our enchant from the registry (only available at runtime).
+                var registryAccess = entity.level().registryAccess();
+                var enchantmentRegistry = registryAccess.registryOrThrow(Registries.ENCHANTMENT);
+                var chunkEaterHolder = enchantmentRegistry.getHolder(ResourceLocation.fromNamespaceAndPath(CavemansDragonIron.MOD_ID, "chunk_eater"));
+                if (chunkEaterHolder.isEmpty()) {
+                    return null;
+                }
+                ItemEnchantments.Mutable mutable = new ItemEnchantments.Mutable(ItemEnchantments.EMPTY);
+                mutable.set(chunkEaterHolder.get(), 1);
+                ItemStack book = new ItemStack(Items.ENCHANTED_BOOK);
+                book.set(DataComponents.STORED_ENCHANTMENTS, mutable.toImmutable());
+                return new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 20),
+                        Optional.of(new ItemCost(Items.BOOK, 1)),
+                        book,
+                        12, 2, 0.05f);
+            });
         }
     }
 

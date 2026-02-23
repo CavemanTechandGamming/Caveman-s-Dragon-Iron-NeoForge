@@ -1,0 +1,10 @@
+{
+  "type": "cavemansdragoniron:add_chunk_eater_book",
+  "chance": 0.01,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing"
+    }
+  ]
+}

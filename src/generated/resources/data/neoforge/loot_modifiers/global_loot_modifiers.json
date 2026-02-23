@@ -36,7 +36,9 @@
     "cavemansdragoniron:dragon_iron_nugget_from_end_city_treasure",
     "cavemansdragoniron:dragon_iron_ingot_from_end_city_treasure",
     "cavemansdragoniron:dragon_iron_furnace_from_end_city_treasure",
-    "cavemansdragoniron:dragon_iron_enchanted_gear_from_end_city_treasure"
+    "cavemansdragoniron:dragon_iron_enchanted_gear_from_end_city_treasure",
+    "cavemansdragoniron:chunk_eater_book_from_end_city_treasure",
+    "cavemansdragoniron:chunk_eater_book_from_fishing"
   ],
   "replace": false
 }

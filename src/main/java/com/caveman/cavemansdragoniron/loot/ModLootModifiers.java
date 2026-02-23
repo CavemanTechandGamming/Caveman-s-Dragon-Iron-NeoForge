@@ -31,6 +31,9 @@ public class ModLootModifiers {
     public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_ENCHANTED_DRAGON_IRON_GEAR =
             LOOT_MODIFIER_SERIALIZERS.register("add_enchanted_dragon_iron_gear", () -> AddEnchantedDragonIronGearModifier.CODEC);
 
+    public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_CHUNK_EATER_BOOK =
+            LOOT_MODIFIER_SERIALIZERS.register("add_chunk_eater_book", () -> AddChunkEaterBookModifier.CODEC);
+
     public static void register(IEventBus eventBus) {
         LOOT_MODIFIER_SERIALIZERS.register(eventBus);
     }
