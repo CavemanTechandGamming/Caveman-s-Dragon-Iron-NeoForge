@@ -162,6 +162,13 @@
 
 ---
 
+## Feb 23, 2026
+
+- **Release — v0.0.2**
+  - Latest release: Dragon Smith, Dragon Iron Furnace, Dragon Glass, Chunk Eater enchantment, lore books, End City loot, config improvements, and more.
+
+---
+
 ### Notes
 
 - **Dragon Iron Furnace:** Furnace textures are temporary; professional textures are in progress.
