@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "front": "cavemansdragoniron:block/dragon_glass_block",
-    "side": "cavemansdragoniron:block/dragon_iron_block",
-    "top": "cavemansdragoniron:block/dragon_iron_block"
+    "front": "cavemansdragoniron:block/dragon_iron_furnace_front_on",
+    "side": "cavemansdragoniron:block/dragon_iron_furnace_side",
+    "top": "cavemansdragoniron:block/dragon_iron_furnace_top"
   }
 }

@@ -52,10 +52,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DRAGON_IRON_FENCE_GATE);
         blockItem(ModBlocks.DRAGON_IRON_TRAP_DOOR, "_bottom");
 
-        // Dragon iron furnace: orientable, front = dragon glass block (placeholder until custom texture)
-        ResourceLocation dragonIronTexture = blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get());
-        ModelFile furnaceUnlit = models().orientable("dragon_iron_furnace", dragonIronTexture, dragonGlassTexture, dragonIronTexture);
-        ModelFile furnaceLit = models().orientable("dragon_iron_furnace_on", dragonIronTexture, dragonGlassTexture, dragonIronTexture);
+        // Dragon iron furnace: orientable, uses custom furnace textures
+        ResourceLocation furnaceSide = modLoc("block/dragon_iron_furnace_side");
+        ResourceLocation furnaceFront = modLoc("block/dragon_iron_furnace_front");
+        ResourceLocation furnaceFrontOn = modLoc("block/dragon_iron_furnace_front_on");
+        ResourceLocation furnaceTop = modLoc("block/dragon_iron_furnace_top");
+        ModelFile furnaceUnlit = models().orientable("dragon_iron_furnace", furnaceSide, furnaceFront, furnaceTop);
+        ModelFile furnaceLit = models().orientable("dragon_iron_furnace_on", furnaceSide, furnaceFrontOn, furnaceTop);
         // Match vanilla furnace: orientable model's front faces north by default; rotation maps block facing to model (north→0, south→180, east→90, west→270)
         getVariantBuilder(ModBlocks.DRAGON_IRON_FURNACE.get())
                 .forAllStates(state -> {
