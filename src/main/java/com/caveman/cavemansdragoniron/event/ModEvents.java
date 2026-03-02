@@ -70,6 +70,7 @@ public class ModEvents {
             if (chunkEaterHolder.isPresent() && EnchantmentHelper.getItemEnchantmentLevel(chunkEaterHolder.get(), mainHandItem) >= 1) {
                 Direction hitFace = getHitDirection(player);
                 if (hitFace == Direction.UP || hitFace == Direction.DOWN) {
+                    int damageBefore = mainHandItem.getDamageValue();
                     int layerY = initialBlockPos.getY(); // same horizontal layer as the block being mined
                     List<BlockPos> layer = getChunkAlignedLayer(initialBlockPos.getX(), initialBlockPos.getZ(), layerY);
                     var level = event.getLevel();
@@ -80,6 +81,10 @@ public class ModEvents {
                             serverPlayer.gameMode.destroyBlock(pos);
                             HARVESTED_BLOCKS.remove(pos);
                         }
+                    }
+                    // 20% chance to take full damage; 80% chance to take no durability cost
+                    if (serverPlayer.getRandom().nextDouble() >= 0.20) {
+                        mainHandItem.setDamageValue(damageBefore);
                     }
                     // Magnetic pull: schedule pulls for the next few ticks (drops may spawn after this event)
                     if (level instanceof ServerLevel serverLevel) {
