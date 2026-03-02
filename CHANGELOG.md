@@ -169,7 +169,20 @@
 
 ---
 
-### Notes
+## Feb 24, 2026
 
-- **Dragon Iron Furnace:** Furnace textures are temporary; professional textures are in progress.
-- **Dragon Iron Hoe:** The Dragon Iron hoe texture is also being fixed.
+- **Chunk Eater durability**
+  - Chunk Eater use now has a **20% chance** to take full durability cost and an **80% chance** to take no durability (one roll per use). Does not affect Hammer 3×3 mining.
+- **Dragon Iron Furnace textures**
+  - Datagen updated to use dedicated furnace block textures (side, front, front lit, top). Professional furnace textures in use.
+- **Dragon Iron Hoe texture**
+  - Dragon Iron hoe texture updated/fixed.
+
+---
+
+## Mar 2, 2026
+
+- **Chunk Eater**
+  - Additional tweaks to the Chunk Eater enchantment.
+- **Release — v0.0.3**
+  - Release (March 2, 2026).
