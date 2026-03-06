@@ -185,4 +185,15 @@
 - **Chunk Eater**
   - Additional tweaks to the Chunk Eater enchantment.
 - **Release — v0.0.3**
-  - Release (March 2, 2026).
+  - Caveman's Dragon Iron V0.0.3 published on March 2, 2026 (20:42 UTC).
+
+---
+
+## Mar 6, 2026
+
+- **Hammer enchantability**
+  - Fixed the hammer not being enchantable; it can now receive enchantments from pickaxe and sword categories.
+- **Crash fix**
+  - Fixed a crash when opening certain chests with mod loot; root cause was written book titles exceeding the 32-character limit.
+- **Release — v0.0.4**
+  - Caveman's Dragon Iron V0.0.4 published on March 6, 2026 (20:32 UTC).
