@@ -1,9 +1,9 @@
-// 1.21.1	2026-02-22T19:14:40.4659036	Tags for minecraft:item mod id cavemansdragoniron
+// 1.21.1	2026-03-06T11:59:17.3800218	Tags for minecraft:item mod id cavemansdragoniron
 5fced6b415239367e3c57f9e34c4cd2b872d1777 data/cavemansdragoniron/tags/item/chunk_eater_tools.json
 20e5eca2613cd076ce7ff12b6ac0368f83aeedfb data/minecraft/tags/item/axes.json
 be05d3d6fdc556053e7a3810eff983475bc5e1b5 data/minecraft/tags/item/beacon_payment_items.json
 b7b8f6ea3212a37b504abffb528c2fe6acd3d348 data/minecraft/tags/item/hoes.json
-4c97921a81a5a86d8c650061f7c884459a110dca data/minecraft/tags/item/pickaxes.json
+f590febe2528706a50663c3c8dc518d08ac36a94 data/minecraft/tags/item/pickaxes.json
 793822505cf25890ce94cd7107a7a1fe3c9a5c81 data/minecraft/tags/item/shovels.json
-5b9912419311225dcf6f336aee87c0cd7b5dcb26 data/minecraft/tags/item/swords.json
+31712d9b5c25f727b9d8ab91d9e5fe5b992a8770 data/minecraft/tags/item/swords.json
 94b8ac21e8cd0799af74496f8871200be6e9160b data/minecraft/tags/item/trimmable_armor.json

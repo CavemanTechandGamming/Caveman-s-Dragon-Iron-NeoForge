@@ -33,13 +33,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.DRAGON_IRON_HOE.get());
 
         tag(ItemTags.PICKAXES)
-                .add(ModItems.DRAGON_IRON_PICKAXE.get());
+                .add(ModItems.DRAGON_IRON_PICKAXE.get())
+                .add(ModItems.DRAGON_IRON_HAMMER.get());
 
         tag(ItemTags.SHOVELS)
                 .add(ModItems.DRAGON_IRON_SHOVEL.get());
 
         tag(ItemTags.SWORDS)
-                .add(ModItems.DRAGON_IRON_SWORD.get());
+                .add(ModItems.DRAGON_IRON_SWORD.get())
+                .add(ModItems.DRAGON_IRON_HAMMER.get());
 
         // ===== Chunk Eater enchantment (pickaxe, shovel, hammer only) =====
         tag(ModTags.Items.CHUNK_EATER_TOOLS)
