@@ -22,6 +22,9 @@ public class ModLootModifiers {
     public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_LORE_BOOK =
             LOOT_MODIFIER_SERIALIZERS.register("add_lore_book", () -> AddLoreBookModifier.CODEC);
 
+    public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_RANDOM_LORE_BOOK =
+            LOOT_MODIFIER_SERIALIZERS.register("add_random_lore_book", () -> AddRandomLoreBookModifier.CODEC);
+
     public static final Supplier<MapCodec<? extends IGlobalLootModifier>> ADD_ITEM_WITH_CHANCE =
             LOOT_MODIFIER_SERIALIZERS.register("add_item_with_chance", () -> AddItemWithChanceModifier.CODEC);
 

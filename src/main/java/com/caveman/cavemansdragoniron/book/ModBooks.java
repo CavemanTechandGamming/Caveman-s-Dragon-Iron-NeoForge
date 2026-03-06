@@ -113,7 +113,7 @@ public final class ModBooks {
     }
 
     private static ItemStack createVolume4TheDragonAndTheFlame() {
-        String title = "Volume IV — The Dragon and the Flame";
+        String title = "Volume IV — Dragon and Flame";
         List<Filterable<Component>> pages = List.of(
                 page("The fall was silent.\n\nThere was no wind as I emerged, no sound of arrival. I stood upon pale stone beneath a sky without sun or stars. The air felt thinner—not colder, not warmer—simply absent of comfort."),
                 page("The island floated in endless void. Beyond its edges was nothing. No distant horizon. No land beyond sight. Only darkness stretching forever.\n\nEndermen walked freely here.\n\nThey did not watch me.\n\nI was beneath their notice."),
@@ -135,7 +135,7 @@ public final class ModBooks {
     }
 
     private static ItemStack createVolume5TheFirstDragonSmith() {
-        String title = "Volume V — The First Dragon Smith";
+        String title = "Volume V — First Dragon Smith";
         List<Filterable<Component>> pages = List.of(
                 page("The fragment did not melt.\n\nIt did not glow as iron does.\n\nInstead, it softened slowly, as though remembering something it had once been. The violet flame did not consume it. It awakened it.\n\nI watched without breathing."),
                 page("The metal bent beneath my tools with resistance, but not refusal. It yielded only to this flame, as though all lesser fires had been unworthy of the task. The smith had been right.\n\nIt did not belong to our world."),
@@ -157,7 +157,7 @@ public final class ModBooks {
     }
 
     private static ItemStack createEpilogueTheFlameThatRemains() {
-        String title = "Epilogue — The Flame That Remains";
+        String title = "Epilogue — Flame That Remains";
         List<Filterable<Component>> pages = List.of(
                 page("Years have passed since I first stepped through the portal.\n\nThe stronghold still stands beneath the earth. The End still waits beyond its frame. The dragon still returns when called, as it always has.\n\nThe world endures its cycles.\n\nAnd so do I."),
                 page("The forge burns each night.\n\nIts violet flame no longer feels alien to me. It does not roar. It does not demand fuel. It simply exists — steady, patient, unending.\n\nLike the End itself."),
